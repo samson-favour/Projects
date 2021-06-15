@@ -1,0 +1,179 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #8f8f8f;
+  font-size: 0.9rem;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Section */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.title-header {
+  font-size: 2.3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+/* Navigation bar */
+.navbar {
+  padding: 0 0 3rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+}
+
+/*
+  Download button */
+.download-btn {
+  margin: 5% 5% 5% 0;
+  font-size: 0.9rem
+}
+
+/* Title-image */
+.title-img {
+  position: absolute;
+  right: 32%;
+  width: 60%;
+  transform: rotate(25deg);
+}
+
+/* Features */
+#features {
+  position: relative;
+}
+
+.feature-box {
+  font-size: 0.9rem;
+  padding: 3%;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 0.9rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials  */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-img {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+.testimonial-text {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.5
+}
+
+/* Press */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing */
+#pricing {
+  padding: 80px;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+.section-pricing {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.5
+}
+
+.price-text {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.5
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.pricing-text {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.5
+}
+
+/* Call to Action */
+.cta-heading {
+  font-size: 2.5rem;
+  padding: 2px;
+  font-weight: 1000;
+  line-height: 1.5;
+}
+
+/* Footer */
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width:768px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    width: 40%;
+  }
+}

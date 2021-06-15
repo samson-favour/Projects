@@ -1,0 +1,30 @@
+@media screen and (max-width:326px){
+    .text-type{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .resp{
+        font-size: 13px;
+    }
+    
+.freeimage img{
+   margin-left: -60px;
+
+}
+}
+@media screen and (max-width:277px){
+    .slider a.btn1,.slider a.btn2{
+        padding: 10px 12px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:243px){
+    .service-wrap p{
+        font-size: 10px; 
+    }
+    .service-wrap h3{
+        font-size: 14px;
+    }
+}

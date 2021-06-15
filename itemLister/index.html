@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Item Lister</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <script src="./JS/all.js"></script>
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 id="header-title" class="text-capitalize ">item lister</h1>
+          </div>
+          <div class="col-sm-6 align-self-center">
+            <input
+              id="filter"
+              type="text"
+              class="form-control"
+              id="filter"
+              placeholder="search items..."
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="main" class="card card-body">
+        <h2 class="title text-capitalize">add items</h2>
+        <form id="addForm" class="form-inline mb-3">
+          <input id="item" type="text" class="form-control mr-3" />
+          <input
+            type="submit"
+            class="btn btn-dark text-capitalize"
+            value="submit"
+          />
+        </form>
+        <h2 class="title">Items</h2>
+        <ul id="stuff" class="list-group">
+          <li class="list-group-item">
+            Item 1<button class="btn btn-danger btn-sm float-right delete ">
+              X
+            </button>
+          </li>
+
+          <li class="list-group-item">
+            Item 2<button class="btn btn-danger btn-sm float-right delete ">
+              X
+            </button>
+          </li>
+          <li class="list-group-item">
+            Item 3<button class="btn btn-danger btn-sm float-right delete ">
+              X
+            </button>
+          </li>
+          <li class="list-group-item">
+            Item 4<button class="btn btn-danger btn-sm float-right delete ">
+              X
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script></script>
+    <script src="./JS/jquery-3.4.1.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

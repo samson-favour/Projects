@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "monsarrat", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  min-height: 80vh;
+  background-color: black;
+  color: whitesmoke;
+}
+.text-info {
+  width: 100%;
+  text-align: center;
+}
+.text-info-heading {
+  text-transform: capitalize;
+  font-size: 32px;
+  letter-spacing: 0.4px;
+}
+.text-info-subheading {
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.text-info-button {
+  margin-top: 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 3px;
+  background-color: rgba(85, 85, 85, 0.534);
+  padding: 10px 20px;
+}
+.img-info {
+  width: 80%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.img-info img {
+  width: 100%;
+  height: 70%;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 60vh;
+}
+.about-info {
+  width: 100%;
+  text-align: center;
+}
+.about-info-heading {
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 0.4px;
+  padding-top: 70px;
+  font-weight: 400;
+}
+.about-info-desc {
+  margin-top: 10px;
+  font-size: smaller;
+  color: #525252e3;
+  line-height: 20px;
+}
+.about-info-button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 3px;
+  background-color: rgba(0, 0, 0, 0.548);
+  padding: 10px 20px;
+}
+.about .about-img {
+  margin-top: 40px;
+  display: block;
+}
+.about .about-img .about-img-wrapper {
+  height: auto;
+  max-width: 400px;
+  padding: 0 50px;
+  position: relative;
+  display: inline-block;
+}
+.about .about-img .about-img-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+.about .about-img .about-img-wrapper::after {
+  position: absolute;
+  content: "";
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  height: 120%;
+  background-color: rgba(34, 33, 33, 0.158);
+  z-index: -1;
+}
+.services {
+  flex-direction: column;
+  min-height: 60vh;
+  padding: 7rem 5rem;
+}
+.services-header {
+  width: 100%;
+  text-align: center;
+}
+.services-header-heading {
+  font-size: 28px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 400;
+}
+.services-header-desc {
+  padding: 20px 10px;
+  font-size: smaller;
+  line-height: 20px;
+  margin-top: 10px;
+  color: #525252e3;
+}
+.services-info {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.service {
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+  transition: 0.3s ease transform;
+  margin: 5px;
+}
+.service-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: 0.3s ease transform;
+  display: block;
+}
+.service-front,
+.service-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.13);
+  padding: 10px;
+}
+.service-back {
+  transform: rotateY(180deg);
+}
+.service-front i {
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 10px;
+}
+.service-front-heading,
+.service-back-heading {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.services .services-info .service:hover .service-card {
+  transform: rotateY(180deg);
+}
+
+.service-back-desc {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.65);
+}
+.service:nth-child(2) .service-card .service-front {
+  background-image: url(./images/nathan-da-silva-FO7kUmBYVi0-unsplash.jpg);
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.service:nth-child(2) .service-card .service-front::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.068);
+  z-index: -1;
+}
+.service:nth-child(2) .service-card .service-front i {
+  color: white;
+}
+
+.hire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 10vh;
+}
+.hire-info {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.212);
+}
+.hire-info-desc {
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+}
+.hire-info-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.267);
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  transition: 0.3s ease background-color;
+}
+.hire-info-button:hover {
+  background-color: black;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 30vh;
+  background-color: black;
+  color: whitesmoke;
+}
+.footer-contact {
+  width: 100%;
+  text-align: center;
+}
+.footer-contact-heading {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.footer-contact-info {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.footer-social-follow {
+  width: 100%;
+  text-align: center;
+}
+.footer-social-follow-heading {
+  margin-top: 13px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.footer-social-icon a {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+@media only screen and (min-width: 760px) {
+  .home {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+  }
+  .text-info {
+    max-width: 35%;
+  }
+  .text-info-heading {
+    font-size: 37px;
+  }
+  .text-info-subheading {
+    font-size: 18px;
+  }
+  .text-info-button {
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: small;
+  }
+  .img-info img {
+    margin-top: 35px;
+  }
+  .about {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .about-info {
+    width: 50%;
+    text-align: left;
+    padding-right: 30px;
+  }
+  .about-info-button {
+    border-radius: 4px;
+  }
+  .about .about-img .about-img-wrapper img {
+    height: 90%;
+    width: 90%;
+  }
+  .about .about-img .about-img-wrapper::after {
+    right: 50px;
+
+    width: 50%;
+  }
+  .services {
+    padding: 4rem 5rem;
+  }
+  .services-header-desc {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .services-info {
+    flex-direction: row;
+    width: 95%;
+  }
+  .service {
+    margin: 0;
+  }
+  .hire-info-button {
+    border-radius: 4px;
+  }
+}

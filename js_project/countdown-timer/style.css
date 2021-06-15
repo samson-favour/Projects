@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../countdown-timer/images\ \(5\).jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: normal;
+  
+}
+.countdown-container{
+    display: flex;  
+}
+
+.big-text{
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-weight: bold;
+}
+
+.countdown-el{
+    text-align: center;
+
+}
+.countdown-el span{
+    font-size: 1rem;
+}

@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-div {
+  position: relative;
+  background-image: url(img/portfolio/1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.img-div::before {
+  content: "";
+  background-color: rgba(19, 18, 18, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+div h1.head1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 4px solid #18d26e;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  margin: 25px 0 0 70px;
+  padding: 0 0 0 12px;
+  transition: 0.5s;
+}
+
+ul.nav-link {
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+li {
+  float: left;
+}
+li:last-child {
+  margin-right: 40px;
+}
+li a {
+  display: inline-block;
+  margin: 34px 15px 0 0;
+  padding-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #18d36e;
+  outline: none;
+  text-decoration: none;
+}
+
+div.img-content {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+}
+div h2 {
+  font-size: 50px;
+  color: whitesmoke;
+  font-weight: 700px;
+  margin-bottom: 30px;
+}
+div p.main-p {
+  color: whitesmoke;
+  text-align: justify;
+  line-height: 20px;
+  padding: 0 205px 0 205px;
+  overflow: hidden;
+}
+.btn {
+  margin-top: 10px;
+  color: whitesmoke;
+  font-size: 20px;
+  background-color: #18d26e;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid #18d26e;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: #18d26e;
+}
+.col {
+  width: 33.3%;
+  float: left;
+  background: black;
+}
+.col- {
+  width: 33.3%;
+  float: left;
+  background-image: linear-gradient(
+    0deg,
+    #000000 0%,
+    #242323 50%,
+    #000000 100%
+  );
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h4.title {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+h4 a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+p.description {
+  margin: 25px 0 30px 30px;
+  color: whitesmoke;
+}
+h1.head2 {
+  text-align: center;
+  padding: 45px 45px 0 45px;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700px;
+}
+
+.p-head-2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.img-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-img {
+  width: 33.3%;
+  float: left;
+  padding: 10px;
+}
+.col-img img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.img1 {
+  padding-left: 30px;
+  padding-right: 15px;
+}
+
+.img2 {
+  padding-right: 30px;
+  padding-left: 15px;
+}
+.img3 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+div.p-div {
+  text-align: center;
+  padding: 10px 20px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.back_page::before {
+  content: "";
+  background-image: url(img/about-bg.jpg);
+  background-attachment: fixed;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+.back_page {
+  position: relative;
+  margin: 0;
+}
+.call-to-action::before {
+  content: "";
+  background-image: url(img/call-to-action-bg.jpg);
+  background-attachment: fixed;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.call-to-action {
+  position: relative;
+  text-align: center;
+}
+.action-head {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 50px;
+  padding: 45px 45px 0 45px;
+}
+.action-para {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.action-button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #18d26e;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  margin-bottom: 60px;
+}
+.port::before {
+  content: "";
+  background-image: url(img/facts-bg.jpg);
+  background-attachment: fixed;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.port {
+  position: relative;
+  padding: 15% 45px 0 45px;
+}
+.port img {
+  width: 100%;
+  height: 100%;
+}
+div.divcontact {
+  text-align: center;
+  padding-top: 10%;
+}
+.lasthead {
+  position: relative;
+  letter-spacing: 0.5px;
+}
+.lasthead::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 52px;
+  height: 3px;
+  background: #f24516;
+  top: 140%;
+  left: 48%;
+}
+.footer-para {
+  margin-top: 42px;
+  padding: 0 206px 0 205px;
+  color: rgb(112, 111, 111);
+  font-size: 18px;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+  margin-top: 38px;
+  margin-bottom: 14%;
+  font-weight: 900;
+}
+.red {
+  color: rgb(221, 43, 43);
+}
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+p.last-text {
+  padding: 5%;
+  color: rgb(112, 111, 111);
+}

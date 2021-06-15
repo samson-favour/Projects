@@ -1,0 +1,34 @@
+.color{
+    color: aquamarine;
+  }
+
+input{
+    display: block;
+  }
+
+.demo {
+  padding: 3em;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    background-color: #14E8FF;
+    }
+
+body{
+  background-color: #14E8FF;
+}
+
+.css-input {
+  padding: 11px;
+  font-size: 15px;
+  border-width: 0px;
+  border-color: #cccccc;
+  background-color: #eb63c5;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.46);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+.css-input:focus {
+  outline:none;
+}
